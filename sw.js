@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sansat-cache-v12';
+const CACHE_NAME = 'sansat-cache-v13';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -21,6 +21,8 @@ const ASSETS_TO_CACHE = [
 ];
 
 self.addEventListener('install', (event) => {
+  // Force new service worker to activate immediately
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       console.log('Opened cache');
@@ -29,19 +31,10 @@ self.addEventListener('install', (event) => {
   );
 });
 
-self.addEventListener('fetch', (event) => {
-  event.respondWith(
-    caches.match(event.request).then((response) => {
-      // Cache hit - return response
-      if (response) {
-        return response;
-      }
-      return fetch(event.request);
-    })
-  );
-});
-
 self.addEventListener('activate', (event) => {
+  // Take control of all pages immediately
+  event.waitUntil(clients.claim());
+
   const cacheWhitelist = [CACHE_NAME];
   event.waitUntil(
     caches.keys().then((cacheNames) => {
@@ -54,4 +47,33 @@ self.addEventListener('activate', (event) => {
       );
     })
   );
+});
+
+self.addEventListener('fetch', (event) => {
+  // NETWORK FIRST STRATEGY for HTML requests
+  // This ensures the user always gets the latest version if online
+  if (event.request.mode === 'navigate' || event.request.destination === 'document') {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          // Update cache with new version
+          const responseClone = response.clone();
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, responseClone);
+          });
+          return response;
+        })
+        .catch(() => {
+          // Offline? Serve valid cached version
+          return caches.match(event.request);
+        })
+    );
+  } else {
+    // CACHE FIRST for images and other static assets (faster)
+    event.respondWith(
+      caches.match(event.request).then((response) => {
+        return response || fetch(event.request);
+      })
+    );
+  }
 });
