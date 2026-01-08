@@ -3181,6 +3181,175 @@
         <button class="scroll-btn next" aria-label="Next">→</button>
 
         <div class="horizontal-wrapper">
+            <!-- Pomegranate Large -->
+            <div class="product-card-large reveal" id="product-pom-large">
+                <div class="product-image">
+                    <img src="pom_large.webp" alt="Pomegranate Large">
+                    <div class="product-tag">🏆 Large Fruits</div>
+                    <div class="benefits-badge" onclick="toggleBenefits(this, event)">💎 Health Benefits</div>
+                    <div class="benefits-tooltip" id="tooltip-pom-large">
+                        <button class="benefits-close" onclick="closeBenefits(this, event)">×</button>
+                        <h4>🍎 Pomegranate Health Benefits</h4>
+                        <ul>
+                            <li><span class="icon">❤️</span> Promotes heart health & reduces cholesterol</li>
+                            <li><span class="icon">🦴</span> Strengthens bones & prevents osteoporosis</li>
+                            <li><span class="icon">🛡️</span> Contains compounds that fight cancer cells</li>
+                            <li><span class="icon">💪</span> Rich in antioxidants & boosts immunity</li>
+                            <li><span class="icon">🧠</span> Improves memory & brain function</li>
+                        </ul>
+                        <div class="farm-note">🌴 Fresh from our Batticaloa Farm - Harvested Daily</div>
+                    </div>
+                    <div class="product-price-tag" id="price-pom-large">Rs. 900</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name" data-i18n="pomLargeName">Pomegranate (Large)</h3>
+                    <p class="product-desc" data-i18n="pomLargeDesc">Premium large ruby jewels of Batticaloa. 3 Large
+                        fruits per pack.</p>
+                    <div class="product-variants" data-product="pom-large">
+                        <span class="variant-chip active" data-qty="3" data-price="900">3 Fruits - Rs.900</span>
+                        <span class="variant-chip" data-qty="6" data-price="1800">6 Fruits - Rs.1,800</span>
+                        <span class="variant-chip" data-qty="9" data-price="2700">9 Fruits - Rs.2,700</span>
+                        <span class="variant-chip" data-qty="12" data-price="3600">12 Fruits - Rs.3,600</span>
+                    </div>
+                    <button class="product-btn whatsapp" onclick="handleProductClick('pom-large')">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        <span class="btn-text">Join WhatsApp Alert</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Jambu Sweet (Updated) -->
+            <div class="product-card-large reveal reveal-delay-2" id="product-jambu-sweet">
+                <div class="product-image">
+                    <img src="jambu_medium.webp" alt="Jambu Sweet">
+                    <div class="product-tag">🍬 Sweet Variety</div>
+                    <div class="benefits-badge" onclick="toggleBenefits(this, event)">🍬 Sweet & Juicy</div>
+                    <div class="benefits-tooltip" id="tooltip-jambu-sweet">
+                        <button class="benefits-close" onclick="closeBenefits(this, event)">×</button>
+                        <h4>🍇 Jambu (Sweet) Benefits</h4>
+                        <ul>
+                            <li><span class="icon">🍬</span> <strong>Naturally Sweet</strong> - Perfect for desserts &
+                                snacks</li>
+                            <li><span class="icon">⚡</span> High in Potassium - Regulates blood pressure</li>
+                            <li><span class="icon">💧</span> 93% Water Content - Extremely hydrating</li>
+                            <li><span class="icon">🍊</span> Rich in Vitamin C - Boosts immunity</li>
+                            <li><span class="icon">🌿</span> Natural Energy - Great for kids</li>
+                        </ul>
+                        <div class="farm-note">🌴 Sweet Variety from our Batticaloa Farm</div>
+                    </div>
+                    <div class="product-price-tag" id="price-jambu-sweet">Rs. 1,250</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name" data-i18n="jambuSweetName">Jambu (Sweet)</h3>
+                    <p class="product-desc" data-i18n="jambuSweetDesc">Naturally sweet Wax Apple. Perfect for those who
+                        love sweetness. Great for kids & desserts!</p>
+                    <div class="product-variants" data-product="jambu-sweet">
+                        <span class="variant-chip" data-qty="0.5" data-price="625">500g - Rs.625</span>
+                        <span class="variant-chip active" data-qty="1" data-price="1250">1 KG - Rs.1,250</span>
+                        <span class="variant-chip" data-qty="2" data-price="2500">2 KG - Rs.2,500</span>
+                        <span class="variant-chip" data-qty="3" data-price="3750">3 KG - Rs.3,750</span>
+                        <span class="variant-chip" data-qty="4" data-price="5000">4 KG - Rs.5,000</span>
+                        <span class="variant-chip" data-qty="5" data-price="6250">5 KG - Rs.6,250</span>
+                    </div>
+                    <button class="product-btn whatsapp" onclick="handleProductClick('jambu-sweet')">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        <span class="btn-text">Join WhatsApp Alert</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Jambu Granate (New) -->
+            <div class="product-card-large reveal reveal-delay-3" id="product-jambu-granate">
+                <div class="product-image">
+                    <img src="dark_red_thai_wax_apple.webp" alt="Jambu Granate">
+                    <div class="product-tag">💎 Rare Variety</div>
+                    <div class="benefits-badge" onclick="toggleBenefits(this, event)">✨ Exotic & Crisp</div>
+                    <div class="benefits-tooltip" id="tooltip-jambu-granate">
+                        <button class="benefits-close" onclick="closeBenefits(this, event)">×</button>
+                        <h4>🍇 Jambu (Granate) Benefits</h4>
+                        <ul>
+                            <li><span class="icon">🌹</span> <strong>Floral Aroma</strong> - Unique scent and taste</li>
+                            <li><span class="icon">💎</span> <strong>Crisp Texture</strong> - Crunchy and refreshing
+                            </li>
+                            <li><span class="icon">❤️</span> <strong>Antioxidant Rich</strong> - Deep red color power
+                            </li>
+                            <li><span class="icon">💧</span> 93% Water Content - Highly hydrating</li>
+                        </ul>
+                        <div class="farm-note">🌴 Unique Red Variety from our Farm</div>
+                    </div>
+                    <div class="product-price-tag" id="price-jambu-granate">Rs. 1,100</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name" data-i18n="jambuGranateName">Jambu (Granate)</h3>
+                    <p class="product-desc" data-i18n="jambuGranateDesc">The Red Diamond. A rare, deep crimson variety
+                        with a unique floral aroma and crisp texture.</p>
+                    <div class="product-variants" data-product="jambu-granate">
+                        <span class="variant-chip" data-qty="0.5" data-price="550">500g - Rs.550</span>
+                        <span class="variant-chip active" data-qty="1" data-price="1100">1 KG - Rs.1,100</span>
+                        <span class="variant-chip" data-qty="2" data-price="2200">2 KG - Rs.2,200</span>
+                        <span class="variant-chip" data-qty="3" data-price="3300">3 KG - Rs.3,300</span>
+                        <span class="variant-chip" data-qty="4" data-price="4400">4 KG - Rs.4,400</span>
+                        <span class="variant-chip" data-qty="5" data-price="5500">5 KG - Rs.5,500</span>
+                    </div>
+                    <button class="product-btn whatsapp" onclick="handleProductClick('jambu-granate')">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        <span class="btn-text">Join WhatsApp Alert</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Jambu Combo (New) -->
+            <div class="product-card-large reveal reveal-delay-4" id="product-jambu-combo">
+                <div class="product-image">
+                    <img src="jambu_combo_variety.png" alt="Jambu Combo Pack">
+                    <div class="product-tag">🍱 All Variety Pack</div>
+                    <div class="benefits-badge" onclick="toggleBenefits(this, event)">⭐ Best of Everything</div>
+                    <div class="benefits-tooltip" id="tooltip-jambu-combo">
+                        <button class="benefits-close" onclick="closeBenefits(this, event)">×</button>
+                        <h4>🍇 All Varieties Pack</h4>
+                        <ul>
+                            <li><span class="icon">🍱</span> <strong>Taste Everything</strong> - Sweet, Granate, &
+                                Classic</li>
+                            <li><span class="icon">👨‍👩‍👧‍👦</span> <strong>Family Favorite</strong> - Something for
+                                everyone</li>
+                            <li><span class="icon">🏷️</span> <strong>Flat Rate</strong> - Great value for mixed pack
+                            </li>
+                        </ul>
+                        <div class="farm-note">🌴 Handpicked Assortment</div>
+                    </div>
+                    <div class="product-price-tag" id="price-jambu-combo">Rs. 1,000</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name" data-i18n="jambuComboName">Jambu (Combo)</h3>
+                    <p class="product-desc" data-i18n="jambuComboDesc">The Ultimate Tasting Platter. Enjoy a mix of
+                        Sweet, Granate, and Classic Jambu in one pack. Flat Rate!</p>
+                    <div class="product-variants" data-product="jambu-combo">
+                        <span class="variant-chip" data-qty="0.5" data-price="500">500g - Rs.500</span>
+                        <span class="variant-chip active" data-qty="1" data-price="1000">1 KG - Rs.1,000</span>
+                        <span class="variant-chip" data-qty="2" data-price="2000">2 KG - Rs.2,000</span>
+                        <span class="variant-chip" data-qty="3" data-price="3000">3 KG - Rs.3,000</span>
+                        <span class="variant-chip" data-qty="4" data-price="4000">4 KG - Rs.4,000</span>
+                        <span class="variant-chip" data-qty="5" data-price="5000">5 KG - Rs.5,000</span>
+                    </div>
+                    <button class="product-btn whatsapp" onclick="handleProductClick('jambu-combo')">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        <span class="btn-text">Join WhatsApp Alert</span>
+                    </button>
+                </div>
+            </div>
+
             <!-- Jambu Large -->
             <div class="product-card-large reveal" id="product-jambu-large">
                 <div class="product-image">
@@ -3227,9 +3396,9 @@
             </div>
 
             <!-- Jambu Medium -->
-            <div class="product-card-large reveal reveal-delay-1" id="product-jambu-medium">
+            <div class="product-card-large reveal" id="product-jambu-medium">
                 <div class="product-image">
-                    <img src="jambu_sweet.webp" alt="Jambu Medium">
+                    <img src="jambu_medium.webp" alt="Jambu Medium">
                     <div class="product-tag">💰 Best Value</div>
                     <div class="benefits-badge" onclick="toggleBenefits(this, event)">💚 Diabetic Friendly</div>
                     <div class="benefits-tooltip" id="tooltip-jambu-medium">
@@ -3245,7 +3414,7 @@
                         </ul>
                         <div class="farm-note">🌴 No-Sweet Variety from our Batticaloa Farm</div>
                     </div>
-                    <div class="product-price-tag" id="price-jambu-medium">Rs. 350</div>
+                    <div class="product-price-tag" id="price-jambu-medium">Rs. 300</div>
                 </div>
                 <div class="product-info">
                     <h3 class="product-name" data-i18n="jambuMediumName">Jambu (Medium)</h3>
@@ -3253,140 +3422,14 @@
                         families. 100% natural, no
                         artificial coating.</p>
                     <div class="product-variants" data-product="jambu-medium">
-                        <span class="variant-chip" data-qty="0.5" data-price="175">500g - Rs.175</span>
-                        <span class="variant-chip active" data-qty="1" data-price="350">1 KG - Rs.350</span>
-                        <span class="variant-chip" data-qty="2" data-price="700">2 KG - Rs.700</span>
-                        <span class="variant-chip" data-qty="3" data-price="1050">3 KG - Rs.1,050</span>
-                        <span class="variant-chip" data-qty="4" data-price="1400">4 KG - Rs.1,400</span>
-                        <span class="variant-chip" data-qty="5" data-price="1750">5 KG - Rs.1,750</span>
+                        <span class="variant-chip" data-qty="0.5" data-price="150">500g - Rs.150</span>
+                        <span class="variant-chip active" data-qty="1" data-price="300">1 KG - Rs.300</span>
+                        <span class="variant-chip" data-qty="2" data-price="600">2 KG - Rs.600</span>
+                        <span class="variant-chip" data-qty="3" data-price="900">3 KG - Rs.900</span>
+                        <span class="variant-chip" data-qty="4" data-price="1200">4 KG - Rs.1,200</span>
+                        <span class="variant-chip" data-qty="5" data-price="1500">5 KG - Rs.1,500</span>
                     </div>
                     <button class="product-btn whatsapp" onclick="handleProductClick('jambu-medium')">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                        </svg>
-                        <span class="btn-text">Join WhatsApp Alert</span>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Jambu Sweet -->
-            <div class="product-card-large reveal reveal-delay-2" id="product-jambu-sweet">
-                <div class="product-image">
-                    <img src="jambu_medium.webp" alt="Jambu Sweet">
-                    <div class="product-tag">🍬 Sweet Variety</div>
-                    <div class="benefits-badge" onclick="toggleBenefits(this, event)">🍬 Sweet & Juicy</div>
-                    <div class="benefits-tooltip" id="tooltip-jambu-sweet">
-                        <button class="benefits-close" onclick="closeBenefits(this, event)">×</button>
-                        <h4>🍇 Jambu (Sweet) Benefits</h4>
-                        <ul>
-                            <li><span class="icon">🍬</span> <strong>Naturally Sweet</strong> - Perfect for desserts
-                                &
-                                snacks</li>
-                            <li><span class="icon">⚡</span> High in Potassium - Regulates blood pressure</li>
-                            <li><span class="icon">💧</span> 93% Water Content - Extremely hydrating</li>
-                            <li><span class="icon">🍊</span> Rich in Vitamin C - Boosts immunity</li>
-                            <li><span class="icon">🌿</span> Natural Energy - Great for kids</li>
-                        </ul>
-                        <div class="farm-note">🌴 Sweet Variety from our Batticaloa Farm</div>
-                    </div>
-                    <div class="product-price-tag" id="price-jambu-sweet">Rs. 450</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-name" data-i18n="jambuSweetName">Jambu (Sweet)</h3>
-                    <p class="product-desc" data-i18n="jambuSweetDesc">Naturally sweet Wax Apple. Perfect for those who
-                        love sweetness. Great
-                        for
-                        kids & desserts!</p>
-                    <div class="product-variants" data-product="jambu-sweet">
-                        <span class="variant-chip" data-qty="0.5" data-price="225">500g - Rs.225</span>
-                        <span class="variant-chip active" data-qty="1" data-price="450">1 KG - Rs.450</span>
-                        <span class="variant-chip" data-qty="2" data-price="900">2 KG - Rs.900</span>
-                        <span class="variant-chip" data-qty="3" data-price="1350">3 KG - Rs.1,350</span>
-                        <span class="variant-chip" data-qty="4" data-price="1800">4 KG - Rs.1,800</span>
-                        <span class="variant-chip" data-qty="5" data-price="2250">5 KG - Rs.2,250</span>
-                    </div>
-                    <button class="product-btn whatsapp" onclick="handleProductClick('jambu-sweet')">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                        </svg>
-                        <span class="btn-text">Join WhatsApp Alert</span>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Pomegranate Large -->
-            <div class="product-card-large reveal reveal-delay-3" id="product-pom-large">
-                <div class="product-image">
-                    <img src="pom_large.webp" alt="Pomegranate Large">
-                    <div class="product-tag">🏆 Large Fruits</div>
-                    <div class="benefits-badge" onclick="toggleBenefits(this, event)">💎 Health Benefits</div>
-                    <div class="benefits-tooltip" id="tooltip-pom-large">
-                        <button class="benefits-close" onclick="closeBenefits(this, event)">×</button>
-                        <h4>🍎 Pomegranate Health Benefits</h4>
-                        <ul>
-                            <li><span class="icon">❤️</span> Promotes heart health & reduces cholesterol</li>
-                            <li><span class="icon">🦴</span> Strengthens bones & prevents osteoporosis</li>
-                            <li><span class="icon">🛡️</span> Contains compounds that fight cancer cells</li>
-                            <li><span class="icon">💪</span> Rich in antioxidants & boosts immunity</li>
-                            <li><span class="icon">🧠</span> Improves memory & brain function</li>
-                        </ul>
-                        <div class="farm-note">🌴 Fresh from our Batticaloa Farm - Harvested Daily</div>
-                    </div>
-                    <div class="product-price-tag" id="price-pom-large">Rs. 900</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-name" data-i18n="pomLargeName">Pomegranate (Large)</h3>
-                    <p class="product-desc" data-i18n="pomLargeDesc">Premium large ruby jewels of Batticaloa. 3 Large
-                        fruits per pack.</p>
-                    <div class="product-variants" data-product="pom-large">
-                        <span class="variant-chip active" data-qty="3" data-price="900">3 Fruits - Rs.900</span>
-                        <span class="variant-chip" data-qty="6" data-price="1800">6 Fruits - Rs.1,800</span>
-                        <span class="variant-chip" data-qty="9" data-price="2700">9 Fruits - Rs.2,700</span>
-                        <span class="variant-chip" data-qty="12" data-price="3600">12 Fruits - Rs.3,600</span>
-                    </div>
-                    <button class="product-btn whatsapp" onclick="handleProductClick('pom-large')">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                        </svg>
-                        <span class="btn-text">Join WhatsApp Alert</span>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Pomegranate Medium -->
-            <div class="product-card-large reveal reveal-delay-4" id="product-pom-medium">
-                <div class="product-image">
-                    <img src="pom_medium.webp" alt="Pomegranate Medium">
-                    <div class="product-tag">🍎 Medium Fruits</div>
-                    <div class="benefits-badge" onclick="toggleBenefits(this, event)">💎 Health Benefits</div>
-                    <div class="benefits-tooltip" id="tooltip-pom-medium">
-                        <button class="benefits-close" onclick="closeBenefits(this, event)">×</button>
-                        <h4>🍎 Pomegranate Health Benefits</h4>
-                        <ul>
-                            <li><span class="icon">❤️</span> Promotes heart health & reduces cholesterol</li>
-                            <li><span class="icon">🦴</span> Strengthens bones & prevents osteoporosis</li>
-                            <li><span class="icon">🛡️</span> Contains compounds that fight cancer cells</li>
-                            <li><span class="icon">💪</span> Rich in antioxidants & boosts immunity</li>
-                            <li><span class="icon">🧠</span> Improves memory & brain function</li>
-                        </ul>
-                        <div class="farm-note">🌴 Fresh from our Batticaloa Farm - Harvested Daily</div>
-                    </div>
-                    <div class="product-price-tag" id="price-pom-medium">Rs. 900</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-name" data-i18n="pomMediumName">Pomegranate (Medium)</h3>
-                    <p class="product-desc" data-i18n="pomMediumDesc">Perfect sized ruby jewels. 4 Medium fruits per
-                        pack - great value!</p>
-                    <div class="product-variants" data-product="pom-medium">
-                        <span class="variant-chip active" data-qty="4" data-price="900">4 Fruits - Rs.900</span>
-                        <span class="variant-chip" data-qty="8" data-price="1800">8 Fruits - Rs.1,800</span>
-                        <span class="variant-chip" data-qty="12" data-price="2700">12 Fruits - Rs.2,700</span>
-                        <span class="variant-chip" data-qty="16" data-price="3600">16 Fruits - Rs.3,600</span>
-                    </div>
-                    <button class="product-btn whatsapp" onclick="handleProductClick('pom-medium')">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path
                                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
@@ -3664,6 +3707,7 @@
                 <div class="footer-links">
                     <a href="tel:+94771420406">+94 77 142 0406</a>
                     <a href="https://wa.me/94771420406" target="_blank">WhatsApp</a>
+                    <a href="mailto:sansatco43@gmail.com">sansatco43@gmail.com</a>
                     <a href="#">Instagram</a>
                 </div>
             </div>
@@ -3973,6 +4017,10 @@
                 pomLargeDesc: "Premium large ruby jewels of Batticaloa. 3 Large fruits per pack.",
                 pomMediumName: "Pomegranate (Medium)",
                 pomMediumDesc: "Perfect sized ruby jewels. 4 Medium fruits per pack - great value!",
+                jambuGranateName: "Jambu (Granate)",
+                jambuGranateDesc: "The Red Diamond. A rare, deep crimson variety with a unique floral aroma and crisp texture.",
+                jambuComboName: "Jambu (Combo)",
+                jambuComboDesc: "The Ultimate Tasting Platter. Enjoy a mix of Sweet, Granate, and Classic Jambu in one pack. Flat Rate!",
                 jambuLargeName: "Jambu (Large)",
                 jambuLargeDesc: "Premium Wax Apple. Extra juicy, perfectly sized. Eat the skin without worry — no chemicals.",
                 jambuMediumName: "Jambu (Medium)",
@@ -4107,6 +4155,10 @@
                 pomLargeDesc: "தரமான பெரிய மாதுளம் பழங்கள். ஒரு பேக்கில் 3 பெரிய பழங்கள்.",
                 pomMediumName: "மாதுளை (நடுத்தரம்)",
                 pomMediumDesc: "சரியான அளவு பழங்கள். ஒரு பேக்கில் 4 நடுத்தர பழங்கள் - சிறந்த தெரிவு!",
+                jambuGranateName: "ஜம்பு (கிரானைட்)",
+                jambuGranateDesc: "சிவப்பு வைரம். அரிய வகை அடர் சிவப்பு நிற ஜம்பு. பூக்களின் மணமும், மொறுமொறுப்பான தன்மையும் கொண்ட தனித்துவமான சுவை.",
+                jambuComboName: "ஜம்பு (காம்போ)",
+                jambuComboDesc: "அனைத்து ரகங்களும் கலந்த தொகுப்பு. இனிப்பு, கிரானைட் மற்றும் கிளாசிக் ஜம்பு வகைகளின் சுவையான கலவை. ஒரே விலையில்!",
                 jambuLargeName: "ஜம்பு (பெரியது)",
                 jambuLargeDesc: "தரமான பெரிய ஜம்பு பழங்கள். மிகவும் சாறு நிறைந்தது. தோலுடன் சாப்பிடலாம்.",
                 jambuMediumName: "ஜம்பு (நடுத்தரம்)",
@@ -4211,6 +4263,45 @@
                     { qty: 16, price: 3600, label: '16 Medium Fruits' }
                 ]
             },
+            'jambu-sweet': {
+                name: 'Jambu (Sweet)',
+                unit: 'kg',
+                basePrice: 1250, // per kg
+                options: [
+                    { qty: 0.5, price: 625, label: '500g' },
+                    { qty: 1, price: 1250, label: '1 KG' },
+                    { qty: 2, price: 2500, label: '2 KG' },
+                    { qty: 3, price: 3750, label: '3 KG' },
+                    { qty: 4, price: 5000, label: '4 KG' },
+                    { qty: 5, price: 6250, label: '5 KG' }
+                ]
+            },
+            'jambu-granate': {
+                name: 'Jambu (Granate)',
+                unit: 'kg',
+                basePrice: 1100, // per kg
+                options: [
+                    { qty: 0.5, price: 550, label: '500g' },
+                    { qty: 1, price: 1100, label: '1 KG' },
+                    { qty: 2, price: 2200, label: '2 KG' },
+                    { qty: 3, price: 3300, label: '3 KG' },
+                    { qty: 4, price: 4400, label: '4 KG' },
+                    { qty: 5, price: 5500, label: '5 KG' }
+                ]
+            },
+            'jambu-combo': {
+                name: 'Jambu (Combo)',
+                unit: 'kg',
+                basePrice: 1000, // per kg
+                options: [
+                    { qty: 0.5, price: 500, label: '500g' },
+                    { qty: 1, price: 1000, label: '1 KG' },
+                    { qty: 2, price: 2000, label: '2 KG' },
+                    { qty: 3, price: 3000, label: '3 KG' },
+                    { qty: 4, price: 4000, label: '4 KG' },
+                    { qty: 5, price: 5000, label: '5 KG' }
+                ]
+            },
             'jambu-large': {
                 name: 'Jambu (Large)',
                 unit: 'kg',
@@ -4227,27 +4318,14 @@
             'jambu-medium': {
                 name: 'Jambu (Medium)',
                 unit: 'kg',
-                basePrice: 350, // per kg
+                basePrice: 300, // per kg
                 options: [
-                    { qty: 0.5, price: 175, label: '500g' },
-                    { qty: 1, price: 350, label: '1 KG' },
-                    { qty: 2, price: 700, label: '2 KG' },
-                    { qty: 3, price: 1050, label: '3 KG' },
-                    { qty: 4, price: 1400, label: '4 KG' },
-                    { qty: 5, price: 1750, label: '5 KG' }
-                ]
-            },
-            'jambu-sweet': {
-                name: 'Jambu (Sweet)',
-                unit: 'kg',
-                basePrice: 450, // per kg
-                options: [
-                    { qty: 0.5, price: 225, label: '500g' },
-                    { qty: 1, price: 450, label: '1 KG' },
-                    { qty: 2, price: 900, label: '2 KG' },
-                    { qty: 3, price: 1350, label: '3 KG' },
-                    { qty: 4, price: 1800, label: '4 KG' },
-                    { qty: 5, price: 2250, label: '5 KG' }
+                    { qty: 0.5, price: 150, label: '500g' },
+                    { qty: 1, price: 300, label: '1 KG' },
+                    { qty: 2, price: 600, label: '2 KG' },
+                    { qty: 3, price: 900, label: '3 KG' },
+                    { qty: 4, price: 1200, label: '4 KG' },
+                    { qty: 5, price: 1500, label: '5 KG' }
                 ]
             }
         };
@@ -4256,9 +4334,11 @@
         const selectedOptions = {
             'pom-large': { qty: 3, price: 900 },
             'pom-medium': { qty: 4, price: 900 },
+            'jambu-sweet': { qty: 1, price: 1250 },
+            'jambu-granate': { qty: 1, price: 1100 },
+            'jambu-combo': { qty: 1, price: 1000 },
             'jambu-large': { qty: 1, price: 450 },
-            'jambu-medium': { qty: 1, price: 350 },
-            'jambu-sweet': { qty: 1, price: 450 }
+            'jambu-medium': { qty: 1, price: 300 }
         };
 
         // ============ LOADER & POMEGRANATE ANIMATION ============
