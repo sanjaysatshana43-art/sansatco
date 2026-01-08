@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sansat-cache-v14';
+const CACHE_NAME = 'sansat-cache-v16';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -17,7 +17,7 @@ const ASSETS_TO_CACHE = [
   './process_pack.webp',
   './process_deliver.webp',
   './process_pay.webp',
-  './jambu_promise.png'
+  './jambu_combo_variety.png'
 ];
 
 self.addEventListener('install', (event) => {
